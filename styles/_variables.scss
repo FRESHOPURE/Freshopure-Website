@@ -1,0 +1,46 @@
+:root {
+  /*================= Colors ===============*/
+  --hue-color: 147;
+  --black-color:  #E2725B;
+  --black-color-alt:  #E2725B;
+  --title-color: hsl(var(--hue-color), 4%, 95%);
+  --text-color: hsl(var(--hue-color),100%, 100%,0.5);
+  --text-color-light: hsl(var(--hue-color), 4%, 65%);
+  --white-color: #fff;
+  --body-color: hsl(var(--hue-color), 50%, 47%);
+  --container-color: hsl(var(--hue-color), 4%, 10%);
+  --text-gradient: linear-gradient(
+    hsl(var(--hue-color), 63%, 34%),
+    hsl(var(--hue-color), 63%, 12%)
+  );
+  --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
+  --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
+
+  /*========== Font and Typography =========*/
+  --body-font: 'Poppins', sans-serif;
+  --text-line-height: 2rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --smaller-font-size: 0.75rem;
+  --small-font-size: 0.813rem;
+  --normal-font-size: 0.938rem;
+  --big-font-size: 2.5rem;
+  --bigger-font-size: 3.5rem;
+  --biggest-font-size: 5rem;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*=============== Measures ===============*/
+  --header-height: 3rem;
+
+  /* Margins */
+  --m-0-75: 0.75rem;
+  --m-1: 1rem;
+  --m-1-5: 1.5rem;
+  --m-2: 2rem;
+  --m-2-5: 2.5rem;
+
+  /*================ Z-index ===============*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}

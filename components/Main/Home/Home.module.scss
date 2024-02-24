@@ -1,0 +1,124 @@
+.home {
+  &__header {
+    position: relative;
+  }
+
+  &__img {
+    width: 250px;
+    position: absolute;
+    top: -16rem;
+    right: 1.5rem;
+  }
+
+
+
+  &__title {
+    font-size: var(--biggest-font-size);
+    background: var(--text-gradient);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    top: -4rem;
+    left: 1rem;
+    line-height: 5rem;
+    margin-bottom: .5rem;
+
+
+    &-description {
+      font-size: var(--h3-font-size);
+      font-weight: var(--font-medium);
+      margin-bottom: var(--m-1);
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+  }
+
+  &__description {
+    margin-bottom: var(--m-2-5);
+    line-height: var(--text-line-height);
+  }
+
+  &__price {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-left: var(--m-0-75);
+  }
+
+  /* Small devices */
+  @media screen and (max-width: 340px) {
+    &__img {
+      width: 200px;
+      top: -14rem;
+    }
+
+    &__data {
+      padding-top: 1rem;
+    }
+
+    &__title {
+      top: -4rem;
+      font-size: var(--bigger-font-size);
+    }
+
+    &__description {
+      font-size: var(--small-font-size);
+    }
+  }
+
+  /* Medium devices */
+  @media screen and (min-width: 576px) {
+    &__container {
+      grid-template-columns: 0.8fr 1fr;
+    }
+
+    &__data {
+      padding-top: 2rem;
+    }
+
+    &__img {
+      top: 0rem;
+      left: 3rem;
+      width: 250px;
+
+    }
+  }
+
+  /* Large devices */
+  @media screen and (min-width: 767px) {
+    &__container {
+      position: relative;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__data {
+      padding-top: 8rem;
+    }
+
+    &__img {
+      top: -6rem;
+      left: 4rem;
+      width: 350px;
+    }
+  }
+
+  /* Extralarge devices */
+  @media screen and (min-width: 1024px) {
+    &__img {
+      width: 500px;
+      left:-1rem;
+      top: -8rem;
+    }
+
+    &__title {
+      top: -5rem;
+      left: 3.5rem;
+    }
+
+    &__description {
+      padding-right: 5rem;
+    }
+  }
+}

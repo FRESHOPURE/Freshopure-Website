@@ -1,0 +1,181 @@
+.products {
+  &__line {
+    line-height: 4rem;
+  }
+
+  &__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 1.5rem;
+    padding-top: 3rem;
+  }
+
+
+  &__card1 {
+    position: relative;
+    height: 132px;
+    background-color: #FFE5E1;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    display: grid;
+    cursor: pointer;
+  }
+  &__card2 {
+    position: relative;
+    height: 132px;
+    background-color: #FFFCA2;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    display: grid;
+    cursor: pointer;
+  }
+  &__card3 {
+    position: relative;
+    height: 132px;
+    background-color: #CD7171;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    display: grid;
+    cursor: pointer;
+  }
+  &__card4 {
+    position: relative;
+    height: 132px;
+    background-color: #5AC680;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    display: grid;
+    cursor: pointer;
+  }
+  &__card5 {
+    position: relative;
+    height: 132px;
+    background-color: #B1ED6C;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    display: grid;
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 100px;
+    position: absolute;
+    inset: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -3rem;
+  }
+
+  &__content {
+    align-self: flex-end;
+  }
+
+  &__caption {
+    padding-top: 4rem;
+  }
+
+  &__title,
+  &__price {
+    font-size: var(--small-font-size);
+    color:#000;
+  }
+
+  &__price {
+    font-weight: var(--font-semi-bold);
+  }
+
+  &__button {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.35rem;
+  }
+
+  /* Small devices */
+  @media screen and (max-width: 340px) {
+    &__container {
+      grid-template-columns: 142px;
+      justify-content: center;
+    }
+  }
+
+  /* Medium devices */
+  @media screen and (min-width: 576px) {
+    &__container {
+      grid-template-columns: repeat(3, 142px);
+      justify-content: center;
+    }
+  }
+
+  /* Large devices */
+  @media screen and (min-width: 767px) {
+    &__container {
+      grid-template-columns: repeat(3, 162px);
+      gap: 6rem 3rem;
+      padding-top: 5rem;
+    }
+
+    &__card1 {
+      height: 152px;
+      padding: 0.85rem;
+    }
+    &__card2 {
+      height: 152px;
+      padding: 0.85rem;
+    }
+    &__card3 {
+      height: 152px;
+      padding: 0.85rem;
+    }
+    &__card4 {
+      height: 152px;
+      padding: 0.85rem;
+    }
+    &__card5 {
+      height: 152px;
+      padding: 0.85rem;
+    }
+
+    &__img {
+      width: 95px;
+    }
+  }
+
+  /* Extralarge devices */
+  @media screen and (min-width: 1024px) {
+    &__container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    &__card1 {
+      height: 175px;
+      padding: 1rem;
+      padding-top: 3.75rem;
+    }
+
+    &__card2 {
+      height: 175px;
+      padding: 1rem;
+      padding-top: 3.75rem;
+    }
+    &__card3 {
+      height: 175px;
+      padding: 1rem;
+      padding-top: 3.75rem;
+    }
+    &__card4 {
+      height: 175px;
+      padding: 1rem;
+      padding-top: 3.75rem;
+    }
+    &__card5 {
+      height: 175px;
+      padding: 1rem;
+      padding-top: 3.75rem;
+    }
+
+    &__img {
+      width: 140px;
+    }
+  }
+}
